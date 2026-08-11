@@ -1,0 +1,738 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        }
+        html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+          }
+
+    </style>
+<style type="text/css">
+      @theme {
+        --font-montserrat: 'Montserrat', sans-serif;
+        --font-open-sans: 'Open Sans', sans-serif;
+        --font-poppins: 'Poppins', sans-serif;
+      }
+    </style>
+</head>
+<body class="font-['Poppins']">
+      <!-- Top Bar - Made more mobile-friendly -->
+<div class="w-full bg-[#1B4332] py-2 md:py-2.5 font-['Open_Sans'] text-xs">
+  <div class="max-w-7xl mx-auto px-3 sm:px-4">
+    
+    <!-- Flex container with better mobile handling -->
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-3">
+      
+      <!-- Contact Info - Stacked on mobile -->
+      <div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 items-center text-[#F7F5EF] opacity-91 text-[11px] sm:text-xs">
+        <div class="flex items-center gap-1.5 sm:gap-2 whitespace-nowrap">
+          <i class="fa-regular fa-circle-user text-xs sm:text-sm"></i> 
+          <span class="hidden xs:inline">+234 905 928 1684</span>
+          <span class="xs:hidden">+234 905...</span>
+        </div>
+        <div class="flex items-center gap-1.5 sm:gap-2 whitespace-nowrap">
+          <i class="fa-regular fa-envelope text-xs sm:text-sm"></i> 
+          <span class="hidden xs:inline">mkkacademy1@gmail.com</span>
+          <span class="xs:hidden">mkk...</span>
+        </div>
+      </div>
+
+      <!-- Socials - Always visible on mobile but smaller -->
+      <div class="flex gap-3 sm:gap-4 md:gap-5 items-center text-[#F7F5EF] opacity-91">
+        <a href="https://facebook.com/mkkprofessionalacademy" class="hover:text-white transition-colors duration-200 text-xs sm:text-sm"><i class="fa-brands fa-facebook"></i></a>
+        <!--<a href="#" class="hover:text-white transition-colors duration-200 text-xs sm:text-sm"><i class="fa-brands fa-x-twitter"></i></a>-->
+        <a href="https://wa.me/2349059281684" class="hover:text-white transition-colors duration-200 text-xs sm:text-sm"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@mkkprofessional_academy?_r=1&_t=ZS-98nZnkXXys6" class="hover:text-white transition-colors duration-200 text-xs sm:text-sm"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+    
+<!-- Main Header / Navbar -->
+<header class="w-full bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between">
+    
+    <!-- Brand / Logo - Optimized for all screens -->
+    <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+      <img 
+        src="mkk-logo.png" 
+        alt="Mkk-MultiPurpose Academy" 
+        class="h-10 w-10 sm:h-12 sm:w-12 md:h-[58px] md:w-[58px] lg:h-[62px] lg:w-[62px] object-contain"
+      >
+      <div class="font-['Montserrat'] flex flex-col justify-center leading-tight">
+        <div class="font-extrabold tracking-wide text-[11px] sm:text-sm md:text-base lg:text-lg">
+          MKK MULTIPURPOSE
+        </div>
+        <div class="text-[10px] sm:text-xs md:text-sm text-gray-700 mt-0.5 sm:mt-1">
+          Professional Academy
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation - Hidden on tablet and below -->
+    <nav class="hidden xl:flex font-['Open_Sans'] text-xs lg:text-sm items-center gap-5 xl:gap-8 font-medium">
+      <a href="index.html" class="hover:text-[#1B4332] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1B4332] after:transition-all hover:after:w-full pb-1">HOME</a>
+      <a href="about.html" class="hover:text-[#1B4332] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1B4332] after:transition-all hover:after:w-full pb-1">ABOUT US</a>
+      <a href="#courses" class="hover:text-[#1B4332] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1B4332] after:transition-all hover:after:w-full pb-1">COURSES</a>
+      <a href="#contact" class="hover:text-[#1B4332] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1B4332] after:transition-all hover:after:w-full pb-1">CONTACTS</a>
+      <a href="join-nghpa.html" class="hover:text-[#1B4332] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1B4332] after:transition-all hover:after:w-full pb-1">NGHPA</a>
+      <a href="join-abcp.html" class="hover:text-[#1B4332] transition-colors duration-200 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#1B4332] after:transition-all hover:after:w-full pb-1">ABCP</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScRW_O_8NRF_pxk_HOJUsVi2FbIlv0azCvn3bchjN2rMmXXuw/viewform?usp=sharing&ouid=113016708754992473307"><button class="bg-[#1B4332] px-5 lg:px-6 py-2 lg:py-2.5 text-[#F7F5EF] opacity-95 hover:opacity-100 hover:shadow-lg transition-all duration-200 rounded-full font-semibold tracking-wide text-xs lg:text-sm hover:scale-105">
+        APPLY NOW
+      </button></a>
+    </nav>
+
+    <!-- Mobile & Tablet Hamburger Button - Shows on xl and below -->
+    <div class="xl:hidden flex items-center">
+      <button 
+        id="mobile-menu-btn" 
+        class="text-2xl sm:text-3xl text-[#1B4332] focus:outline-none p-1.5 sm:p-2 hover:bg-gray-50 rounded-lg transition-colors duration-200"
+        aria-label="Toggle navigation menu"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu - Enhanced with smooth animation -->
+  <div 
+    id="mobile-menu" 
+    class="hidden xl:hidden bg-white w-full border-t border-gray-100 absolute left-0 flex-col font-['Open_Sans'] text-sm font-medium shadow-xl max-h-[calc(100vh-120px)] overflow-y-auto"
+  >
+    <div class="max-w-7xl mx-auto px-3 sm:px-4 py-2">
+      
+      <!-- Navigation Links with better spacing -->
+      <div class="space-y-0.5">
+        <a href="index.html" class="block px-4 py-3.5 rounded-lg hover:bg-gray-50 hover:text-[#1B4332] transition-all duration-200 border-b border-gray-50">
+          <i class="fa-solid fa-house mr-3 text-[#1B4332] opacity-60"></i> HOME
+        </a>
+        <a href="about.html" class="block px-4 py-3.5 rounded-lg hover:bg-gray-50 hover:text-[#1B4332] transition-all duration-200 border-b border-gray-50">
+          <i class="fa-solid fa-users mr-3 text-[#1B4332] opacity-60"></i> ABOUT US
+        </a>
+        <a href="#courses" class="block px-4 py-3.5 rounded-lg hover:bg-gray-50 hover:text-[#1B4332] transition-all duration-200 border-b border-gray-50">
+          <i class="fa-solid fa-graduation-cap mr-3 text-[#1B4332] opacity-60"></i> COURSES
+        </a>
+        <a href="#contact" class="block px-4 py-3.5 rounded-lg hover:bg-gray-50 hover:text-[#1B4332] transition-all duration-200 border-b border-gray-50">
+          <i class="fa-solid fa-envelope mr-3 text-[#1B4332] opacity-60"></i> CONTACTS
+        </a>
+        <a href="join-nghpa.html" class="block px-4 py-3.5 rounded-lg hover:bg-gray-50 hover:text-[#1B4332] transition-all duration-200 border-b border-gray-50">
+          <i class="fa-solid fa-notes-medical mr-3 text-[#1B4332] opacity-60"></i> NGHPA
+        </a>
+        <a href="join-abcp.html" class="block px-4 py-3.5 rounded-lg hover:bg-gray-50 hover:text-[#1B4332] transition-all duration-200 border-b border-gray-50">
+          <i class="fa-solid fa-helmet-safety mr-3 text-[#1B4332] opacity-60"></i> ACBP
+        </a>
+      </div>
+      
+      <!-- Apply Now Button - Full width on mobile -->
+      <div class="px-4 pt-3 pb-1">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScRW_O_8NRF_pxk_HOJUsVi2FbIlv0azCvn3bchjN2rMmXXuw/viewform?usp=sharing&ouid=113016708754992473307"><button class="w-full bg-[#1B4332] px-4 py-3.5 text-[#F7F5EF] rounded-full font-semibold tracking-wide shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] text-sm">
+          APPLY NOW <i class="fa-solid fa-arrow-right ml-2"></i>
+        </button></a>
+      </div>
+
+      <!-- Quick Contact in Mobile Menu -->
+      <div class="px-4 pt-4 pb-2 mt-2 border-t border-gray-100">
+        <div class="text-xs text-gray-500 space-y-2">
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-user text-[#1B4332]"></i>
+            <span>+234 905 928 1684</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-envelope text-[#1B4332]"></i>
+            <span>mkkacademy1@gmail.com</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+<section class="bg-[#B7BBC3]/20">
+  <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 text-center">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-light text-[#0F2A44] tracking-tight">
+      About us
+    </h1>
+  </div>
+  <!--<div class="h-1.5 w-full bg-[#D19B25]"></div>-->
+</section>
+
+<!--About-->
+<section class="bg-white py-10 sm:py-16 md:py-14 px-4 sm:px-6">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
+
+    <!-- Left: Label + Heading -->
+    <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+      <div class="font-['Open_Sans'] text-xs font-semibold uppercase tracking-[0.2em] text-[#D19B25] mb-3">
+        About
+      </div>
+      <h2 class="font-['Poppins'] text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0F2A44] leading-tight">
+        Knowledge. Skills. Wealth.
+      </h2>
+    </div>
+
+    <!-- Right: Body Copy -->
+    <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400" class="font-['Open_Sans'] text-sm text-gray-500 leading-relaxed space-y-4">
+      <p>
+        MKK Multipurpose Professional Academy (MPA) is a government-registered professional institution committed to delivering quality education, practical skills, and professional training in Natural Medicine, Integrative Healthcare, Building Technology, Engineering, and Property Development. Our mission is to equip individuals with the knowledge, skills, and professional competence needed for employment, entrepreneurship, and lifelong career success.
+      </p>
+      <p>
+        At MKK Multipurpose Professional Academy, we believe education is a pathway to transformation. By combining academic excellence with practical training, we empower our students to become competent professionals, successful entrepreneurs, and responsible leaders who contribute positively to society.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!--Professional Certificate Pathways-->
+<section class="bg-white py-10 sm:py-16 md:py-10 px-4 sm:px-6">
+  <div class="max-w-6xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+    <div class="font-['Open_Sans'] text-xs font-semibold uppercase tracking-[0.2em] text-[#D19B25] mb-2">
+      Pathways
+    </div>
+    <h2 class="font-['Poppins'] text-2xl sm:text-3xl md:text-4xl font-semibold text-[#0F2A44]">
+      Our Programmes
+    </h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto relative" data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+    <!-- Connecting line (desktop only) -->
+    <div class="hidden md:block absolute top-8 left-0 right-0 h-[2px] bg-gray-200"></div>
+
+    <div class="flex flex-col md:flex-row gap-10 md:gap-4 relative">
+
+      <!-- 1. Professional Certificate -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-16 h-16 rounded-full bg-[#1B4332] text-[#D19B25] flex items-center justify-center text-2xl shrink-0 relative z-10 border-4 border-white shadow-md">
+          <i class="bi bi-patch-check"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mt-4 mb-1">
+          Professional Certificate
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 mb-1">3 Months</p>
+        <p class="font-['Open_Sans'] text-[11px] text-gray-400 leading-relaxed mb-3 max-w-[180px]">
+          O'Level Certificate or equivalent
+        </p>
+        <div class="font-['Poppins']">
+          <span class="text-gray-400 line-through text-xs mr-1.5">₦90,000</span>
+          <span class="text-[#1B4332] font-bold text-base">₦45,000</span>
+        </div>
+      </div>
+
+      <!-- 2. Professional Diploma -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-16 h-16 rounded-full bg-[#1B4332] text-[#D19B25] flex items-center justify-center text-2xl shrink-0 relative z-10 border-4 border-white shadow-md">
+          <i class="bi bi-mortarboard"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mt-4 mb-1">
+          Professional Diploma
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 mb-1">1 Year — 2 Sections</p>
+        <p class="font-['Open_Sans'] text-[11px] text-gray-400 leading-relaxed mb-3 max-w-[180px]">
+          O'Level Certificate or equivalent
+        </p>
+        <div class="font-['Poppins']">
+          <span class="text-gray-400 line-through text-xs mr-1.5">₦190,000</span>
+          <span class="text-[#1B4332] font-bold text-base">₦95,000</span>
+        </div>
+        <p class="font-['Open_Sans'] text-[10px] text-gray-400 mt-0.5">per section</p>
+      </div>
+
+      <!-- 3. Advanced Professional Diploma -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-16 h-16 rounded-full bg-[#1B4332] text-[#D19B25] flex items-center justify-center text-2xl shrink-0 relative z-10 border-4 border-white shadow-md">
+          <i class="bi bi-journal-richtext"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mt-4 mb-1">
+          Advanced Professional Diploma
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 mb-1">1 Year — 2 Sections</p>
+        <p class="font-['Open_Sans'] text-[11px] text-gray-400 leading-relaxed mb-3 max-w-[180px]">
+          Diploma Certificate or equivalent
+        </p>
+        <div class="font-['Poppins']">
+          <span class="text-gray-400 line-through text-xs mr-1.5">₦245,000</span>
+          <span class="text-[#1B4332] font-bold text-base">₦122,500</span>
+        </div>
+        <p class="font-['Open_Sans'] text-[10px] text-gray-400 mt-0.5">per section</p>
+      </div>
+
+      <!-- 4. Post-Professional Diploma -->
+      <div class="flex flex-col items-center text-center flex-1">
+        <div class="w-16 h-16 rounded-full bg-[#1B4332] text-[#D19B25] flex items-center justify-center text-2xl shrink-0 relative z-10 border-4 border-white shadow-md">
+          <i class="bi bi-trophy"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mt-4 mb-1">
+          Post-Professional Diploma
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 mb-1">1 Year — 2 Sections</p>
+        <p class="font-['Open_Sans'] text-[11px] text-gray-400 leading-relaxed mb-3 max-w-[180px]">
+          Advanced Diploma or equivalent
+        </p>
+        <div class="font-['Poppins']">
+          <span class="text-gray-400 line-through text-xs mr-1.5">₦330,000</span>
+          <span class="text-[#1B4332] font-bold text-base">₦165,000</span>
+        </div>
+        <p class="font-['Open_Sans'] text-[10px] text-gray-400 mt-0.5">per section</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Faculty and courses-->
+<section class="relative">
+  <!-- Gradient Header -->
+  <div class="bg-gradient-to-br from-[#0F2A44] to-[#1B4332] pt-16 pb-32 sm:pt-20 sm:pb-40 px-4 sm:px-6 text-center">
+    <h2 data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" class="font-['Poppins'] text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
+      Our Faculty
+    </h2>
+    <p data-aos="fade-up" data-aos-duration="900" data-aos-delay="400" class="font-['Open_Sans'] text-xs sm:text-sm text-white/70 max-w-3xl mx-auto leading-relaxed">
+      At MKK Multipurpose Professional Academy (MPA), our faculty comprises experienced professionals, industry experts, and qualified educators dedicated to delivering quality education, practical training, and professional mentorship. Their expertise and commitment ensure that every student receives the knowledge, skills, and guidance needed to excel in their chosen profession.
+    </p>
+  </div>
+
+  <!-- Cards Grid (overlapping the gradient) -->
+  <div id="courses" class="max-w-6xl mx-auto px-4 sm:px-6 -mt-20 sm:-mt-24 pb-14 sm:pb-16">
+    <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+
+      <!-- 1 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-flower1"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Natural Medicine & Herbal Science
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Learn the principles of natural healing, medicinal plants, herbal preparation, disease prevention, and holistic healthcare.
+        </p>
+      </div>
+
+      <!-- 2 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-heart-pulse"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Fertility Science & Natural Therapy
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Study natural approaches to male and female fertility, reproductive health, pregnancy support, and family wellness.
+        </p>
+      </div>
+
+      <!-- 3 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-capsule"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Integrative Medicine
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Combine conventional healthcare knowledge with evidence-informed natural therapies to promote holistic patient care.
+        </p>
+      </div>
+
+      <!-- 4 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-clipboard2-pulse"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Healthcare Assistant & Natural Therapy
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Develop practical skills in patient care, first aid, health support services, and complementary natural therapeutic practices.
+        </p>
+      </div>
+
+      <!-- 5 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-person-hearts"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Mental Health, Addiction & Natural Therapy
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Study mental health conditions, addiction prevention and recovery, counselling techniques, psychosocial support, and natural therapeutic approaches that promote emotional and psychological well-being.
+        </p>
+      </div>
+
+      <!-- 6 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-hand-thumbs-up"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Caregiving & Natural Therapy
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Learn professional caregiving for children, adults, the elderly, and individuals with special needs using holistic care approaches.
+        </p>
+      </div>
+
+      <!-- 7 - Healthcare -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-people"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Marriage & Family Therapy
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Acquire skills in relationship counselling, conflict resolution, family development, parenting support, and emotional wellness.
+        </p>
+      </div>
+
+      <!-- 8 - Building/Civil/Property -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#D19B25]/10 text-[#D19B25] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-buildings"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Civil & Building Construction
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Study building construction methods, civil engineering principles, site supervision, construction materials, and project execution.
+        </p>
+      </div>
+
+      <!-- 9 - Building/Civil/Property -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#D19B25]/10 text-[#D19B25] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-compass"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Architectural & Structural Design
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Learn architectural planning, building design, structural analysis, drafting, and construction documentation.
+        </p>
+      </div>
+
+      <!-- 10 - Building/Civil/Property -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#D19B25]/10 text-[#D19B25] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-signpost-split"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Land & Engineering Survey
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Gain practical knowledge in land measurement, mapping, engineering surveys, GIS, GPS technology, and boundary determination.
+        </p>
+      </div>
+
+      <!-- 11 - Building/Civil/Property -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#D19B25]/10 text-[#D19B25] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-briefcase"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Property & Project Management
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Learn property administration, real estate management, project planning, budgeting, contract administration, and leadership.
+        </p>
+      </div>
+
+      <!-- 12 - Building/Civil/Property -->
+      <div class="bg-white rounded-xl shadow-lg p-5 sm:p-6 hover:shadow-xl transition-shadow duration-300">
+        <div class="w-11 h-11 rounded-lg bg-[#D19B25]/10 text-[#D19B25] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-semibold text-sm sm:text-base text-[#0F2A44] mb-2">
+          Land & Property Dispute Resolution & Mediation
+        </h3>
+        <p class="font-['Open_Sans'] text-xs text-gray-500 leading-relaxed">
+          Develop expertise in land laws, property dispute management, negotiation, mediation, documentation, and peaceful conflict resolution.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- View All CTA -->
+    <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="300" class="text-center mt-10 sm:mt-12">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScRW_O_8NRF_pxk_HOJUsVi2FbIlv0azCvn3bchjN2rMmXXuw/viewform?usp=sharing&ouid=113016708754992473307">
+      <button class="bg-[#1B4332] text-white font-['Poppins'] text-xs sm:text-sm font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg active:scale-95 transition-all">
+        Apply for Any Programme <i class="bi bi-arrow-right ml-1"></i>
+      </button>
+    </a>
+    </div>
+  </div>
+</section>
+
+<!--Mission, values-->
+<section class="bg-white">
+
+  <!-- OUR MISSION -->
+  <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="300" class="bg-[#0F2A44] py-12 sm:py-16 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-4 md:gap-12">
+      <div class="md:w-1/4 shrink-0">
+        <h2 class="font-['Poppins'] text-white font-bold text-lg sm:text-xl tracking-wide">
+          OUR MISSION
+        </h2>
+      </div>
+      <div class="font-['Open_Sans'] text-white/80 text-sm leading-relaxed space-y-4 md:w-3/4">
+        <p>
+          To provide high-quality professional education that develops knowledgeable, skilled, and ethical professionals through practical training, innovation, and lifelong learning.
+        </p>
+        <!--<p>
+          [Replace with real mission copy] We are committed to accessible, flexible learning pathways that combine expert instruction with hands-on practice, preparing graduates for professional certification and long-term career growth.
+        </p>-->
+      </div>
+    </div>
+  </div>
+
+  <!-- OUR VISION (background image) -->
+  <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="400" class="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-[url('vision.jpg')] bg-cover bg-center">
+    <!-- Dark overlay for text readability -->
+    <div class="absolute inset-0 bg-[#0F2A44]/70"></div>
+
+    <div class="relative max-w-6xl mx-auto flex flex-col md:flex-row gap-4 md:gap-12">
+      <div class="md:w-1/4 shrink-0">
+        <h2 class="font-['Poppins'] text-white font-bold text-lg sm:text-xl tracking-wide">
+          OUR VISION
+        </h2>
+      </div>
+      <div class="font-['Open_Sans'] text-white/90 text-sm leading-relaxed space-y-4 md:w-3/4">
+        <p>
+          To become a leading professional academy recognized nationally and internationally for excellence in professional education, practical skills development, research, and innovation.
+        </p>
+        <!--<p>
+          [Replace with real vision copy] We envision a future where every graduate is empowered with globally competitive credentials and the confidence to lead in their chosen field.
+        </p>-->
+      </div>
+    </div>
+  </div>
+
+  <!-- OUR VALUES -->
+  <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="300" class="py-12 sm:py-16 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-4 md:gap-12">
+      <div class="md:w-1/4 shrink-0">
+        <h2 class="font-['Poppins'] text-[#0F2A44] font-bold text-lg sm:text-xl tracking-wide">
+          OUR CORE VALUES
+        </h2>
+      </div>
+      <ul class="font-['Open_Sans'] text-gray-600 text-sm leading-relaxed space-y-2 md:w-3/4 list-disc pl-5">
+        <li>Excellence</li>
+        <li>Integrity</li>
+        <li>Professionalism</li>
+        <li>Innovation</li>
+        <li>Practical Learning</li>
+        <li>Leadership</li>
+        <li>Service to Humanity</li>
+
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact" class="bg-white">
+
+  <!-- Compact Header (no bg image, no hero treatment) -->
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 pt-14 sm:pt-16 pb-10 sm:pb-12 text-center">
+    <h1 data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" class="font-['Poppins'] text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0F2A44] tracking-tight mb-4">
+      Contact Us
+    </h1>
+    <p data-aos="fade-up" data-aos-duration="900" data-aos-delay="350" class="font-['Open_Sans'] text-sm sm:text-base text-gray-500 leading-relaxed max-w-xl mx-auto">
+      Need help or have a question? We're more than happy to hear from you — Contact us through any of these means.
+    </p>
+  </div>
+
+  <!-- Contact Info Row -->
+  <div data-aos="fade-up" data-aos-duration="900" data-aos-delay="400" class="max-w-6xl mx-auto px-4 sm:px-6 pb-14 sm:pb-16">
+    <div class="flex flex-col sm:flex-row justify-center items-center sm:items-stretch divide-y sm:divide-y-0 sm:divide-x divide-gray-200 text-center">
+
+      <!-- Visit Us -->
+      <div class="flex flex-col items-center px-0 sm:px-8 md:px-10 py-6 sm:py-0 flex-1 max-w-xs">
+        <div class="w-12 h-12 rounded-full bg-[#1B4332]/10 text-[#1B4332] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-geo-alt"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-bold text-sm sm:text-base text-[#0F2A44] uppercase tracking-wide mb-2">
+          Visit Us
+        </h3>
+        <p class="font-['Open_Sans'] text-xs sm:text-sm text-gray-500 leading-relaxed max-w-[220px]">
+          Mkk Multipurpose Buildings, Atere, Agara Odo Ẹja, second Mosque, Akala Express, New Garage Area, Ibadan.
+        </p>
+      </div>
+
+      <!-- Call Us -->
+      <div class="flex flex-col items-center px-0 sm:px-8 md:px-10 py-6 sm:py-0 flex-1 max-w-xs">
+        <div class="w-12 h-12 rounded-full bg-[#0F2A44]/10 text-[#0F2A44] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-telephone"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-bold text-sm sm:text-base text-[#0F2A44] uppercase tracking-wide mb-2">
+          Call or Whatsapp Us
+        </h3>
+        <p class="font-['Open_Sans'] text-xs sm:text-sm">
+          <a href="tel:+2349059281684" class="text-gray-500 hover:underline">+234 905 928 1684</a>
+        </p>
+      </div>
+
+      <!-- Email Us -->
+      <div class="flex flex-col items-center px-0 sm:px-8 md:px-10 py-6 sm:py-0 flex-1 max-w-xs">
+        <div class="w-12 h-12 rounded-full bg-[#0F2A44]/10 text-[#0F2A44] flex items-center justify-center text-xl mb-4">
+          <i class="bi bi-envelope"></i>
+        </div>
+        <h3 class="font-['Poppins'] font-bold text-sm sm:text-base text-[#0F2A44] uppercase tracking-wide mb-2">
+          Email Us
+        </h3>
+        <div class="font-['Open_Sans'] text-xs sm:text-sm space-y-1">
+          <p><a href="mailto:info@mkkacademy.com" class="text-gray-500 hover:underline break-all">info@mkkacademy.com</a></p>
+          <p><a href="mailto:mkkacademy1@gmail.com" class="text-gray-500 hover:underline break-all">mkkacademy1@gmail.com</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+    <!--footer-->
+<footer class="w-full bg-[#0F2A44] text-white py-12 sm:py-16 px-5 sm:px-8 md:px-16 font-sans">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-start mb-8">
+
+    <!-- Column 1: Brand Tagline -->
+    <div>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight tracking-tight">
+        <span data-aos="fade-right" data-aos-duration="900" data-aos-delay="300">Knowledge.</span><br />
+        <span data-aos="fade-right" data-aos-duration="900" data-aos-delay="400">Skills.</span><br />
+        <span data-aos="fade-right" data-aos-duration="900" data-aos-delay="500">Wealth.<sup>®</span></sup>
+      </h2>
+    </div>
+
+    <!-- Column 2: Ibadan Office -->
+    <div class="text-xs space-y-3 text-gray-300">
+      <h3 class="font-bold text-white uppercase tracking-widest">Ibadan</h3>
+
+      <div class="space-y-1">
+        <p><a href="mailto:info@mkkacademy.com" class="underline hover:text-white transition-colors break-all">info@mkkacademy.com</a></p>
+        <p><a href="mailto:mkkacademy1@gmail.com" class="underline hover:text-white transition-colors break-all">mkkacademy1@gmail.com</a></p>
+        <p><a href="tel:+2349059281684" class="hover:text-white transition-colors">+234 90 5928 1684</a></p>
+        <p class="leading-relaxed">Mkk multipurpose Buildings, Atere, Agara Odo Ẹja, second Mosque, Akala Express, New Garage Area, Ibadan.</p>
+      </div>
+    </div>
+
+    <!-- Column 3: CTA & Socials -->
+    <div class="text-xs space-y-6">
+      <div>
+        <h3 class="font-bold text-white uppercase tracking-widest mb-3 leading-snug">
+          READY TO START YOUR<br />PROFESSIONAL JOURNEY?
+        </h3>
+        <a href="https://wa.me/2349059281684" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-bold text-white underline hover:opacity-80 transition-opacity">
+          APPLY NOW — 50% SCHOLARSHIP &rarr;
+        </a>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-white uppercase tracking-widest mb-4">FOLLOW US</h3>
+        <div class="flex items-center gap-5 text-lg">
+          <a href="https://wa.me/2349059281684" class="hover:text-gray-400 transition-colors" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.tiktok.com/@mkkprofessional_academy?_r=1&_t=ZS-98nZnkXXys6" class="hover:text-gray-400 transition-colors" aria-label="TikTok">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a href="https://facebook.com/mkkprofessionalacademy" class="hover:text-gray-400 transition-colors" aria-label="Instagram">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <!--<a href="#" class="hover:text-gray-400 transition-colors" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>-->
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-2 text-[11px] text-gray-400 text-center md:text-left">
+    <p>© 2026 MKK Multipurpose Professional Academy (MPA) — RC No. 9643148</p>
+    <p class="text-gray-400">Accredited by NGHPA &amp; ACBP</p>
+  </div>
+</footer>
+  <!-- Mobile Menu Toggle Script -->
+<script>
+  // Enhanced mobile menu with smooth animations
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = btn.querySelector('i');
+  
+  // Toggle menu function
+  function toggleMenu() {
+    // Toggle the menu visibility
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+    
+    // Switch between hamburger and close (X) icon
+    if(icon.classList.contains('fa-bars')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-xmark');
+      // Add smooth rotation
+      icon.style.transition = 'transform 0.3s ease';
+    } else {
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    }
+  }
+  
+  btn.addEventListener('click', toggleMenu);
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const isClickInside = btn.contains(event.target) || menu.contains(event.target);
+    if (!isClickInside && !menu.classList.contains('hidden')) {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    }
+  });
+  
+  // Close menu on escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && !menu.classList.contains('hidden')) {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      icon.classList.remove('fa-xmark');
+      icon.classList.add('fa-bars');
+    }
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,        // animation length in ms — 600-800 feels smooth without dragging
+    easing: 'ease-out-cubic', // natural deceleration, feels premium not bouncy
+    once: true,            // animate only once per element (don't re-trigger on scroll back up)
+    offset: 100,           // trigger animation 100px before element enters viewport
+    delay: 0,              // set per-element instead of globally (see below)
+    anchorPlacement: 'top-bottom', // trigger when top of element hits bottom of viewport
+  });
+</script>
+</body>
+</html>
